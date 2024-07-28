@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form action="signup.php" method="post" class="signup-form">
+            <div class="logo">
+                <img src="uitmlogo.png" height ="150" width ="200" alt="UiTM Logo">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="repeat_password">Repeat Password</label>
+                <input type="password" name="repeat_password" id="repeat_password" required>
+            </div>
+            <div class="form-group">
+                <label>Role:</label>
+                <div class="role-options">
+                    <input type="radio" name="role" value="student" id="student" required>
+                    <label for="student">Student</label>
+                    <input type="radio" name="role" value="supervisor" id="supervisor" required>
+                    <label for="supervisor">Supervisor</label>
+                    <input type="radio" name="role" value="company" id="company" required>
+                    <label for="company">Company</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
